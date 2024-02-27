@@ -1,22 +1,12 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-
+import ListagemProdutos from '@/components/ListagemProdutos.vue';
+import MenuSuperior from '@/components/MenuSuperior.vue';
 </script>
 
 <template>
-    <span>Em breve</span>
-  <header>
-   
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  
+    <MenuSuperior />
+    <ListagemProdutos />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
 </template>
 
