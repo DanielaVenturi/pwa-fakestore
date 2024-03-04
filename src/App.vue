@@ -4,8 +4,10 @@ import MenuSuperior from '@/components/MenuSuperior.vue';
 </script>
 
 <template>
-  
+  <header>
     <MenuSuperior />
+  </header>
+    
     <ListagemProdutos />
 
 </template>
