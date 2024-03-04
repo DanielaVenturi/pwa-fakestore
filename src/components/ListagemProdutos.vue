@@ -18,7 +18,7 @@ onMounted(async () => {
       Produtos - {{ browserWidth }} - {{ deviceWidth }} - {{ isMobile }}
       <span v-if="isMobile">É móvel</span>
     </h1>
-    <div class="container">
+    <div class="container" :class="isMobile ? 'screenMobile'  : 'sreenDesktop'">
       <div class="card" v-for="produto in produtos" :key="produto.id">
         <h1 class="card--title">{{ produto.title }}</h1>
         <p>{{ produto.description }}</p>
@@ -29,6 +29,7 @@ onMounted(async () => {
   </div>
 </template>
 <style scoped>
+
 .container {
   display: flex;
   flex-wrap: wrap;
