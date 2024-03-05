@@ -18,15 +18,15 @@ onMounted(async () => {
       Produtos - {{ browserWidth }} - {{ deviceWidth }} - {{ isMobile }}
       <span v-if="isMobile">É móvel</span>
     </h1>
-    <div class="container" :class="isMobile ? 'screenMobile'  : 'sreenDesktop'">
+    <div class="container" :class="isMobile ? 'screenMobile'  : 'screenDesktop'">
       <div class="card" v-for="produto in produtos" :key="produto.id">
-        <h1 class="card--title">{{ produto.title }}</h1>
-        <p>{{ produto.description }}</p>
-        <p>{{ formatPrice(produto.price) }}</p>
         <img class="card--avatar" :src="produto.image" :alt="produto.title" />
+        <h1 class="card--title">{{ produto.title }}</h1>
+        <p v-if="!isMobile">{{ produto.description }}</p>
+        <p>{{ formatPrice(produto.price) }}</p>
       </div>
     </div>
-  </div>  
+  </div>
 </template>
 <style scoped>
 .screenMobile{
@@ -39,8 +39,8 @@ onMounted(async () => {
   margin: auto;
   padding: 1rem 0;
 }
-.sreenDesktop{
-  color: red;
+.screenDesktop{
+  color: brown;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
