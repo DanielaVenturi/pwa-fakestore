@@ -26,10 +26,29 @@ onMounted(async () => {
         <img class="card--avatar" :src="produto.image" :alt="produto.title" />
       </div>
     </div>
-  </div>
+  </div>  
 </template>
 <style scoped>
-
+.screenMobile{
+  color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+.sreenDesktop{
+  color: red;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
