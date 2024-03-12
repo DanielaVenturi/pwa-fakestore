@@ -34,37 +34,30 @@ const menuAberto = ref(false);
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     padding: 0.2rem 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    float: left;
+    height: 100vh;
   }
   
-  .header--logo {
-    display: flex;
-    align-items: center;
-  }
   .header--logo img {
     width: 3rem;
     height: 3rem;
     margin-right: 0.5rem;
   }
-  nav ul {
-    display: flex;
-    gap: 1rem;
-  }
+ 
   nav li {
     list-style: none;
   }
   
   .header--icons {
-    display: flex;
+    
     gap: 1rem;
   }
-  .menu-hamburger {
-    display: none;
+ 
+  h1{
+    font-size: 2vw;
   }
-  
-  @media (max-width: 768px) {
+ 
     nav ul {
       display: none;
     }
@@ -79,7 +72,7 @@ const menuAberto = ref(false);
       background-color: rgba(255, 255, 255, 0.9);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
       border-radius: 10px;
-      right: 0;
+      bottom: 30vw;
       text-align: right;
       padding: 10px 16px;
     }
@@ -87,5 +80,5 @@ const menuAberto = ref(false);
       display: block;
       margin-top: 12px;
     }
-  }
+
   </style>

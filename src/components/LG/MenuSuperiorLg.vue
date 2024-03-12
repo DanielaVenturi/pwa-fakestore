@@ -34,8 +34,6 @@ const menuAberto = ref(false);
     background: #fff;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     padding: 0.2rem 1rem;
-   
-  
     display: block;
     float: left;
     height: 100vh;
@@ -46,19 +44,13 @@ const menuAberto = ref(false);
     height: 3rem;
     margin-right: 0.5rem;
   }
-  nav ul {
-
-  
-	
-		
-	
-  }
+ 
   nav li {
     list-style: none;
   }
   
   .header--icons {
-    display: flex;
+    
     gap: 1rem;
   }
   .menu-hamburger {
