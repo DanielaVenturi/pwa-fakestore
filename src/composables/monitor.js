@@ -29,18 +29,13 @@ import {
         menu.value = defineAsyncComponent(() =>
           import('../components/MD/MenuSuperiorMd.vue'),
         );
-      } else if (width < 1200) {
+      } else  {
         breakpoint.value = 'lg';
         menu.value = defineAsyncComponent(() =>
-          import('../components/LG/MenuSuperiorLg.vue'),
+          import('../layouts/LayoutLG.vue'),
         );
-      } else {
-        breakpoint.value = 'xl';
-        menu.value = defineAsyncComponent(() =>
-          import('../components/XL/MenuSuperiorXl.vue'),
-        );
-      }
-    };
+   
+    }};
   
     onMounted(() => {
       updateBreakpoint();
